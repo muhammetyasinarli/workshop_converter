@@ -1,0 +1,28 @@
+version: '3.4'
+services:
+  app:
+    container_name: converterdocker
+    image: converterdocker
+    build:
+      context: .
+      dockerfile: LinkConverter.API/Dockerfile
+    ports:
+      - "5000:80"
+    depends_on:
+      - postgres-db
+    networks:
+      - trendyol-network
+  postgres-db:
+    image: postgres:latest
+    container_name: postgres-db
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: Postgres2434
+      POSTGRES_DB: LINKDB
+    networks:
+      - trendyol-network
+networks:
+      trendyol-network:
