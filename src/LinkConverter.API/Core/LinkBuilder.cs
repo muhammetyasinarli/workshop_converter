@@ -1,4 +1,5 @@
 ﻿using LinkConverter.API.Model;
+using LinkConverter.API.Model.Exceptions;
 using System;
 using System.Collections.Specialized;
 using System.Web;
@@ -14,8 +15,9 @@ namespace LinkConverter.API.Core
         {
             if(!Uri.TryCreate(link, UriKind.RelativeOrAbsolute, out sourceUri))
             {
-                throw new Exception($"Not valid link : {link ?? ""}");
+                throw new ValidationException($"Not valid link : {link ?? ""}");
             }
+
             sourceQueryString = HttpUtility.ParseQueryString(sourceUri.Query);
         }
         
@@ -39,9 +41,11 @@ namespace LinkConverter.API.Core
 
         public string CreateLink(UriBuilderRequest builderRequest)
         {
-            UriBuilder uriBuilder = new UriBuilder(builderRequest.Scheme, builderRequest.Host);
-            uriBuilder.Path = builderRequest.Path;
-            uriBuilder.Query = builderRequest.Query;
+            UriBuilder uriBuilder = new UriBuilder(builderRequest.Scheme, builderRequest.Host)
+            {
+                Path = builderRequest.Path,
+                Query = builderRequest.Query
+            };
             return uriBuilder.ToString();
         }
     }

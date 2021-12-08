@@ -7,7 +7,7 @@ namespace LinkConverter.API.Core
 {
     public enum ConversionDirection
     {
-        WebUrlToDeeplink,
-        DeeplinkToWebUrl
+        WebUrlToDeeplink = 1,
+        DeeplinkToWebUrl =2
     }
 }
