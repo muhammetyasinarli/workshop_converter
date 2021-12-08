@@ -6,7 +6,7 @@
 ## Steps
 1. `git clone https://github.com/muhammetyasinarli/workshop_converter.git`
 
-2. `cd src`
+2. `cd workshop_converter\src`
 
 3. `docker-compose build`
 
