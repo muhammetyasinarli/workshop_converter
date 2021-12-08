@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkConverter.API", "LinkCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkConverter.UnitTests", "LinkConverter.UnitTests\LinkConverter.UnitTests.csproj", "{03930812-8311-460F-9050-89D451246885}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C7AD513F-E028-4EF7-ADC4-62B2C6A8576B}"
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{2459BF70-00C3-43A4-AC0F-0CCAAFDD4155}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{03930812-8311-460F-9050-89D451246885}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03930812-8311-460F-9050-89D451246885}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03930812-8311-460F-9050-89D451246885}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C7AD513F-E028-4EF7-ADC4-62B2C6A8576B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C7AD513F-E028-4EF7-ADC4-62B2C6A8576B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C7AD513F-E028-4EF7-ADC4-62B2C6A8576B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C7AD513F-E028-4EF7-ADC4-62B2C6A8576B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2459BF70-00C3-43A4-AC0F-0CCAAFDD4155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2459BF70-00C3-43A4-AC0F-0CCAAFDD4155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2459BF70-00C3-43A4-AC0F-0CCAAFDD4155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2459BF70-00C3-43A4-AC0F-0CCAAFDD4155}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
