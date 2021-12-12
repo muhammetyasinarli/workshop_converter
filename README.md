@@ -30,4 +30,4 @@ GET  /api/v1/link-conversions            # Returns all stored link conversions
 
 - Postman collection : postman\LinkConverter.postman_collection.json
 
-- View error logs at http://localhost:5341
+- View error logs at Seq Dashboard : http://localhost:5341 
