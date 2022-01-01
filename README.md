@@ -1,5 +1,5 @@
-# LinkConverter
-  LinkConverter is a rest api using .Net Core and PostgreSQL with Docker support.
+# workshop_converter
+  workshop_converter is a rest api using .Net Core and PostgreSQL with Docker support.
   Both the rest api and the Postgres DB runs in container.
   Added Swagger support to interact with API's resources.'
   
